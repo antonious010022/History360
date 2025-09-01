@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تاريخي شامل - History360</title>
+  <link rel="stylesheet" href="style political.css" />
+</head>
+<body>
+
+<header>
+  <h1>التاريخ السياسي  </h1>
+<p>هنا تجد أبرز الأحداث والرجال السياسيين عبر التاريخ، الحروب، التحولات، والقرارات التي شكلت مسار السياسة في البلاد والعالم.</p>
+</header>
+
+<div class="sections">
+
+<div class="sections">
+
+  <a href="Sections\political\political.html" class="section-item">
+    <img src="IMAGE\جمال-عبد-الناصر.png" alt=" الشخصيات التاريخيه " class="section-img" />
+    <div class="section-text">
+      <h3>أبرز الرجال السياسيين </h3>
+      <p>هنا تجد أبرز الرجال السياسيين عبر التاريخ، اللي شكلوا مسارات سياسية، وتركوا بصمة واضحة في الأحداث الوطنية والدولية.</p>
+    </div>
+  </a>
+
+  <a href="Sections\social\social.html" class="section-item">
+    <img src="IMAGE\world-war.png" alt=" الأحداث الفنية " class="section-img" />
+    <div class="section-text">
+      <h3> أبرز الحروب </h3>
+     <p>استعرض أهم الحروب التي شكلت التاريخ السياسي، من معارك فاصلة إلى صراعات غيرت موازين القوى في البلاد والعالم.</p>
+    </div>
+  </a>
+
+  <a href="Sections\sports\sports.html" class="section-item">
+    <img src="IMAGE\1919-3.png" alt=" الإنجازات " class="section-img" />
+    <div class="section-text">
+      <h3>  الأحداث السياسية الكبرى  </h3>
+      <p>اكتشف أهم الأحداث السياسية التي شكلت مجرى التاريخ، من ثورات وتحالفات إلى قرارات ومعاهدات غيرت موازين القوة في البلاد والعالم.</p>
+    </div>
+  </a>
+
+  <a href="Sections\science\science.html" class="section-item">
+    <img src="IMAGE\nahas36.jpg" alt="  المعالم الفنية" class="section-img" />
+    <div class="section-text">
+      <h3>المعارك السياسية </h3>
+      <p>استعرض أهم الصراعات السياسية الداخلية والخارجية، التي أثرت في السلطة والحكم وغيرت مسار الأحداث الوطنية والدولية.</p>
+    </div>
+  </a>
+
+
+<div class="podcast">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="بودكاست" />
+  <div class="podcast-text">بودكاست قريباً… استعد لسلسلة حلقات مميزة تغطي أحداث التاريخ بطريقة مختلفة!</div>
+</div>
+
+<footer>
+  <h2>آخر الأخبار</h2>
+  <p>تابع أحدث الاكتشافات الأثرية، الأحداث التاريخية الجديدة، وتحليلاتنا الحصرية مباشرة هنا.</p>
+</footer>
+
+<!-- مؤشر الماوس الدائري -->
+<script>
+  // إنشاء المؤشر الدائري وإضافته للصفحة
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  // تحديث موقع المؤشر مع حركة الماوس
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // تكبير المؤشر عند الضغط على رابط أو زرار
+  document.addEventListener('mousedown', e => {
+    if (e.target.closest('a, button')) {
+      cursor.classList.add('active');
+    }
+  });
+
+  // إعادة المؤشر لحجمه الطبيعي عند رفع الضغط
+  document.addEventListener('mouseup', e => {
+    cursor.classList.remove('active');
+  });
+  
+</script>
+
+</body>
+</html>

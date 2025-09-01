@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تاريخي شامل - History360</title>
+  <link rel="stylesheet" href="style art .css" />
+</head>
+<body>
+
+<header>
+  <h1>التاريخ الفني</h1>
+  <p>التاريخ الفني بيوثق أهم الأحداث والشخصيات والإنجازات اللي شكلت مسيرة الفن عبر العصور</p>
+</header>
+
+<div class="sections">
+
+<div class="sections">
+
+  <a href="Sections\political\political.html" class="section-item">
+<img src="image/2932.png" alt="الشخصيات التاريخيه" class="section-img" />
+    <div class="section-text">
+      <h3> الشخصيات الفنية </h3>
+      <p> بتمثل الفنانين والمبدعين اللي ساهموا في تشكيل ملامح التاريخ الفني، من رسامين ونحاتين وموسيقيين وممثلين، واللي أعمالهم لسه بتأثر وتلهم لحد النهارده. </p>
+    </div>
+  </a>
+
+  <a href="Sections\social\social.html" class="section-item">
+    <img src="image\Mona_Lisa.png" alt=" الأحداث الفنية " class="section-img" />
+    <div class="section-text">
+      <h3> الأحداث الفنية </h3>
+      <p>هي المحطات الرئيسية اللي شكلت مسيرة الفنون عبر العصور، زي المعارض الكبرى، الحركات الفنية الجديدة، واللحظات اللي غيرت اتجاه الإبداع وفتحت مجالات جديدة للتعبير الفني.</p>
+    </div>
+  </a>
+
+  <a href="Sections\sports\sports.html" class="section-item">
+    <img src="image\oskar.png" alt=" الإنجازات " class="section-img" />
+    <div class="section-text">
+      <h3> الإنجازات  </h3>
+      <p>بتمثل الأعمال والابتكارات العظيمة اللي حققها الفنانون عبر التاريخ، واللي ساهمت في تطوير مجالات الفن المختلفة وخلّت ليها تأثير باقٍ لحد النهارده.</p>
+    </div>
+  </a>
+
+  <a href="Sections\science\science.html" class="section-item">
+    <img src="image\اللوفر.png" alt="  المعالم الفنية" class="section-img" />
+    <div class="section-text">
+      <h3>  المعالم الفنية </h3>
+      <p>هي المواقع والأماكن اللي ليها قيمة تاريخية وفنية، زي المتاحف، المعارض، والعمائر الفنية، واللي بتحكي قصة تطور الفن وبتخلينا نتعرف على حضارات وفنون الماضي.</p>
+    </div>
+  </a>
+
+
+<div class="podcast">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="بودكاست" />
+  <div class="podcast-text">بودكاست قريباً… استعد لسلسلة حلقات مميزة تغطي أحداث التاريخ بطريقة مختلفة!</div>
+</div>
+
+<footer>
+  <h2>آخر الأخبار</h2>
+  <p>تابع أحدث الاكتشافات الأثرية، الأحداث التاريخية الجديدة، وتحليلاتنا الحصرية مباشرة هنا.</p>
+</footer>
+
+<!-- مؤشر الماوس الدائري -->
+<script>
+  // إنشاء المؤشر الدائري وإضافته للصفحة
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  // تحديث موقع المؤشر مع حركة الماوس
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // تكبير المؤشر عند الضغط على رابط أو زرار
+  document.addEventListener('mousedown', e => {
+    if (e.target.closest('a, button')) {
+      cursor.classList.add('active');
+    }
+  });
+
+  // إعادة المؤشر لحجمه الطبيعي عند رفع الضغط
+  document.addEventListener('mouseup', e => {
+    cursor.classList.remove('active');
+  });
+  
+</script>
+
+</body>
+</html>

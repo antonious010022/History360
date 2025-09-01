@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تاريخي شامل - History360</title>
+  <link rel="stylesheet" href="style sports.css
+" />
+</head>
+<body>
+
+<header>
+  <h1>التاريخ الرياضي </h1>
+  <p> الرياضة عبر التاريخ مش بس منافسة، لكنها صنعت أساطير، أرقام قياسية، ولحظات غريبة لا تُنسى</p>
+</header>
+
+<div class="sections">
+
+<div class="sections">
+
+  <a href="Sections\political\political.html" class="section-item">
+    <img src="image\687219.png" alt=" الشخصيات التاريخيه " class="section-img" />
+    <div class="section-text">
+      <h3>  أساطير كرة القدم </h3>
+      <p> هنا تجد أبرز لاعبي كرة القدم عبر التاريخ، اللي صنعوا فرق، وتركوا بصمة لا تُنسى في عالم الكرة </p>
+    </div>
+  </a>
+
+  <a href="Sections\social\social.html" class="section-item">
+    <img src="image\FIFIA WORLED.png" alt=" الأحداث الفنية " class="section-img" />
+    <div class="section-text">
+      <h3> أبرز الأحداث </h3>
+      <p> من المباريات التاريخية للبطولات العالمية للحظات اللي غيرت مجرى الرياضة، اكتشف أهم الأحداث اللي صنعت التاريخ الرياضي </p>
+    </div>
+  </a>
+
+  <a href="Sections\sports\sports.html" class="section-item">
+    <img src="image\NBA-MVP-Winners-List.png" alt=" الإنجازات " class="section-img" />
+    <div class="section-text">
+      <h3>  الإنجازات  </h3>
+      <p>استكشف أرقام قياسية وإنجازات أسطورية صنعت مجد اللاعبين والفرق عبر التاريخ</p>
+    </div>
+  </a>
+
+  <a href="Sections\science\science.html" class="section-item">
+ <img src="image/5f31d80564704.png" alt="المعالم الفنية" class="section-img" />
+    <div class="section-text">
+      <h3>غرائب الرياضة </h3>
+      <p>اكتشف أغرب الأحداث والمواقف في عالم الرياضة، من مباريات غريبة لحوادث لا تصدق، قصص تدهشك وتضحك في نفس الوقت </p>
+    </div>
+  </a>
+
+
+<div class="podcast">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="بودكاست" />
+  <div class="podcast-text">بودكاست قريباً… استعد لسلسلة حلقات مميزة تغطي أحداث التاريخ بطريقة مختلفة!</div>
+</div>
+
+<footer>
+  <h2>آخر الأخبار</h2>
+  <p>تابع أحدث الاكتشافات الأثرية، الأحداث التاريخية الجديدة، وتحليلاتنا الحصرية مباشرة هنا.</p>
+</footer>
+
+<!-- مؤشر الماوس الدائري -->
+<script>
+  // إنشاء المؤشر الدائري وإضافته للصفحة
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  // تحديث موقع المؤشر مع حركة الماوس
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // تكبير المؤشر عند الضغط على رابط أو زرار
+  document.addEventListener('mousedown', e => {
+    if (e.target.closest('a, button')) {
+      cursor.classList.add('active');
+    }
+  });
+
+  // إعادة المؤشر لحجمه الطبيعي عند رفع الضغط
+  document.addEventListener('mouseup', e => {
+    cursor.classList.remove('active');
+  });
+  
+</script>
+
+</body>
+
+</html>
+
+
+
+
+

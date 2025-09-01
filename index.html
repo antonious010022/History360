@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History360</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>تاريخي شامل</h1>
+  <p>كل التاريخ السياسي، الاجتماعي، الرياضي، الثقافي، العلمي والفني في مكان واحد</p>
+
+<p style="color: red; font-weight: bold; text-align: center; margin-top: 10px;">
+  🚧 الموقع تحت الإنشاء – بعض الصفحات مازالت قيد التطوير 🚧
+</p>
+
+</header>
+
+<div class="sections">
+
+<div class="sections">
+
+  <a href="Sections\political\political.html" class="section-item">
+    <img src="images/2255.png" alt="التاريخ السياسي" class="section-img" />
+    <div class="section-text">
+      <h3>التاريخ السياسي</h3>
+      <p>حروب، معاهدات، قادة، ثورات، وأحداث سياسية مهمة عبر العصور.</p>
+    </div>
+  </a>
+
+  <a href="Sections\social\social.html" class="section-item">
+    <img src="images/2254.png" alt="التاريخ الاجتماعي" class="section-img" />
+    <div class="section-text">
+      <h3>التاريخ الاجتماعي</h3>
+      <p>أنماط حياة، تغيرات اجتماعية، حركات شعبية، وتطور المجتمعات.</p>
+    </div>
+  </a>
+
+  <a href="Sections\sports\sports.html" class="section-item">
+    <img src="images/2245.png" alt="التاريخ الرياضي" class="section-img" />
+    <div class="section-text">
+      <h3>التاريخ الرياضي</h3>
+      <p>حياة الرياضيين، إنجازات، بطولات، تاريخ الأندية، وتحولات رياضية.</p>
+    </div>
+  </a>
+
+  <a href="Sections\science\science.html" class="section-item">
+    <img src="images/4115956.png" alt="التاريخ العلمي" class="section-img" />
+    <div class="section-text">
+      <h3>التاريخ العلمي</h3>
+      <p>اكتشافات علمية، اختراعات، علماء، وتطورات تقنية أثرت في العالم.</p>
+    </div>
+  </a>
+
+  <a href="Sections\art\art.html" class="section-item">
+    <img src="images/554.png" alt="التاريخ الفني " class="section-img" />
+    <div class="section-text">
+      <h3>التاريخ الفني</h3>
+      <p>الفنون التشكيلية، الموسيقى، السينما، المسرح، العمارة، والأزياء عبر العصور.</p>
+    </div>
+  </a>
+
+</div>
+
+</div>
+
+<div class="podcast">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="بودكاست" />
+  <div class="podcast-text">بودكاست قريباً… استعد لسلسلة حلقات مميزة تغطي أحداث التاريخ بطريقة مختلفة!</div>
+</div>
+
+<footer>
+  <h2>آخر الأخبار</h2>
+  <p>تابع أحدث الاكتشافات الأثرية، الأحداث التاريخية الجديدة، وتحليلاتنا الحصرية مباشرة هنا.</p>
+</footer>
+
+<!-- مؤشر الماوس الدائري -->
+<script>
+  // إنشاء المؤشر الدائري وإضافته للصفحة
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  // تحديث موقع المؤشر مع حركة الماوس
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // تكبير المؤشر عند الضغط على رابط أو زرار
+  document.addEventListener('mousedown', e => {
+    if (e.target.closest('a, button')) {
+      cursor.classList.add('active');
+    }
+  });
+
+  // إعادة المؤشر لحجمه الطبيعي عند رفع الضغط
+  document.addEventListener('mouseup', e => {
+    cursor.classList.remove('active');
+  });
+  
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تاريخي شامل - History360</title>
+  <link rel="stylesheet" href="style science.css" />
+</head>
+<body>
+
+<header>
+  <h1>التاريخ العلمي</h1>
+<p>استكشف مسار العلوم عبر العصور، من الاكتشافات القديمة إلى التجارب الحديثة، وتعرف على العلماء والأحداث التي شكلت فهمنا للعالم.</p>
+</header>
+
+<div class="sections">
+
+<div class="sections">
+
+  <a href="Sections\political\political.html" class="section-item">
+    <img src="image\5446.jpg" alt=" الشخصيات التاريخيه " class="section-img" />
+    <div class="section-text">
+      <h3> اكتشافات علمية بارزة</h3>
+      <p>استعرض أهم الاكتشافات العلمية التي غيرت فهمنا للعالم، من قوانين الطبيعة إلى الاكتشافات الطبية الحيويه </p>
+    </div>
+  </a>
+
+  <a href="Sections\social\social.html" class="section-item">
+    <img src="image\554654.jpg" alt=" الأحداث الفنية " class="section-img" />
+    <div class="section-text">
+      <h3> علماء مشهورون</h3>
+      <p>هتعرف على العلماء الذين تركوا بصمة في مجالاتهم، وقدموا إسهامات غيرت مسار المعرفة البشريه</p>
+    </div>
+  </a>
+
+  <a href="Sections\sports\sports.html" class="section-item">
+    <img src="image\2225.png" alt=" الإنجازات " class="section-img" />
+    <div class="section-text">
+      <h3> التكنولوجيا والابتكارات الحديثة  </h3>
+      <p>اكتشف أحدث الابتكارات العلمية والتكنولوجية التي تؤثر على حياتنا اليومية وتفتح آفاقاً جديدة للمستقبل   </p>
+    </div>
+  </a>
+
+
+
+<div class="podcast">
+  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="بودكاست" />
+  <div class="podcast-text">بودكاست قريباً… استعد لسلسلة حلقات مميزة تغطي أحداث التاريخ بطريقة مختلفة!</div>
+</div>
+
+<footer>
+  <h2>آخر الأخبار</h2>
+  <p>تابع أحدث الاكتشافات الأثرية، الأحداث التاريخية الجديدة، وتحليلاتنا الحصرية مباشرة هنا.</p>
+</footer>
+
+<!-- مؤشر الماوس الدائري -->
+<script>
+  // إنشاء المؤشر الدائري وإضافته للصفحة
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  // تحديث موقع المؤشر مع حركة الماوس
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // تكبير المؤشر عند الضغط على رابط أو زرار
+  document.addEventListener('mousedown', e => {
+    if (e.target.closest('a, button')) {
+      cursor.classList.add('active');
+    }
+  });
+
+  // إعادة المؤشر لحجمه الطبيعي عند رفع الضغط
+  document.addEventListener('mouseup', e => {
+    cursor.classList.remove('active');
+  });
+  
+</script>
+
+</body>
+</html>
