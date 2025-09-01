@@ -28,6 +28,8 @@ body::before {
   left: 0; 
   width: 100%;
   height: 100%;
+
+  
   background: 
     linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), /* التعتيم */
 url("RIAN_archive.jpg") no-repeat center center fixed;
@@ -197,5 +199,6 @@ body, img, a, button {
   cursor: none !important;
 
 }
+
 
 
