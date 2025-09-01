@@ -30,7 +30,7 @@ body::before {
   height: 100%;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), /* التعتيم */
-url("IMAGE/RIAN_archive.jpg") no-repeat center center fixed;
+url("IMAGE/RIAN_archive.png") no-repeat center center fixed;
     background-size: cover; /* الصورة تغطي كل المساحة */
     z-index: -1; /* تخليها ورا كل العناصر */
 }
@@ -195,4 +195,5 @@ footer {
 /* نخفي مؤشر الماوس الافتراضي من كل العناصر */
 body, img, a, button {
   cursor: none !important;
+
 }
